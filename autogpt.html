@@ -1,17 +1,17 @@
-<h1 id="autogpt-an-autonomous-ai-tool-for-text-generation-and-completion">AutoGPT: An Autonomous AI Tool for Text Generation and Completion</h1>
-<p>AutoGPT is an autonomous AI tool that allows LLMs (Large Language Models) to think, plan, and execute actions independently. With this tool, you no longer need to provide input, as the AI can think and make decisions rationally. In this article, we will discuss how to install and use AutoGPT on your computer.</p>
-<h2 id="things-to-know-before-you-use-auto-gpt">Things to Know Before You Use Auto-GPT</h2>
-<p>Before using AutoGPT, here are a few things you should know:</p>
+<h1 id="autogpt-autonomous-ai-tool-for-text-generation-and-completion">AutoGPT: Autonomous AI Tool for Text Generation and Completion</h1>
+<p>AutoGPT is an autonomous AI tool that allows Large Language Models (LLMs) to think, plan, and execute actions independently. This article will discuss how to install and use AutoGPT on your computer.</p>
+<h2 id="before-using-auto-gpt">Before Using Auto-GPT</h2>
+<p>Here are a few things you should know before using AutoGPT:</p>
 <ul>
-<li>You don’t need a powerful computer to install and use AutoGPT. Any decent computer would do the job. The heavy lifting is done by OpenAI API on the cloud.</li>
-<li>If you have access to the GPT-4 API, AutoGPT would work best as it’s much better at thinking and coming to a conclusion. However, you can also use the regular OpenAI API with the GPT-3.5 model.</li>
-<li>Auto-GPT uses a lot of tokens, so you have to add billing details and set up spending limits once your free credit limit is exhausted.</li>
-<li>Unlike the free version of ChatGPT, Auto-GPT can connect to the internet and find the latest information on any subject. So you can use it to access any webpage and capture information.</li>
+<li>A powerful computer is not necessary for the installation and use of AutoGPT, any decent computer would do as the heavy lifting is done by OpenAI API on the cloud.</li>
+<li>Access to the GPT-4 API is recommended for best results, however, the regular OpenAI API with the GPT-3.5 model can still be used.</li>
+<li>Auto-GPT uses a lot of tokens. Add billing details and set up spending limits once the free credit limit is exhausted.</li>
+<li>Unlike the free version of ChatGPT, Auto-GPT can connect to the internet and find the latest information on any subject, making it useful for accessing any webpage and capturing information.</li>
 </ul>
-<h2 id="how-to-set-up-auto-gpt-on-your-pc">How to Set up Auto-GPT on Your PC</h2>
+<h2 id="setting-up-auto-gpt-on-your-pc">Setting Up Auto-GPT on Your PC</h2>
 <p>To install <a href="https://docs.kanaries.net/articles/autogpt-4">AutoGPT</a> on your PC, follow these steps:</p>
 <h3 id="step-1-install-python-and-pip">Step 1: Install Python and Pip</h3>
-<p>The first step is to download the latest version of Python from the official website and install it on your computer. Make sure to enable “Add python.exe to PATH” on Windows before installing Python. After installation, open the Windows Terminal and run the following command to check the installation:</p>
+<p>Download the latest version of Python from the official website and install it on your computer. Make sure to enable “Add python.exe to PATH” on Windows before installing Python. After installation, open the Windows Terminal and run the following command to check the installation:</p>
 <pre><code>pip <span class="hljs-comment">--version</span>
 </code></pre><h3 id="step-2-add-api-keys-to-use-auto-gpt">Step 2: Add API Keys to Use Auto-GPT</h3>
 <p>Go to the GitHub release page of Auto-GPT and download the ZIP file by clicking on “Source code (zip)”. Extract the ZIP file and copy the “Auto-GPT” folder. Paste the folder to your preferred location.</p>
@@ -23,43 +23,43 @@
 <p>Copy the “Key Value” by clicking on the button.</p>
 <p>Open the text editor again and paste it next to PINECONE_API_KEY. Copy the value under “Environment”. Paste it next to PINECONE_ENV.</p>
 <p>Save the “.env.template” file. Rename .env.template to .env.</p>
-<h3 id="step-3-install-auto-gpt-on-windows-macos-and-linux">Step 3: Install Auto-GPT on Windows, macOS, and Linux</h3>
+<h3 id="step-3-installing-auto-gpt-on-windows-macos-and-linux">Step 3: Installing Auto-GPT on Windows, macOS, and Linux</h3>
 <p>To <a href="https://docs.kanaries.net/articles/auto-gpt-install">install Auto-GPT</a>, follow these steps:</p>
 <ol>
-<li><p>After adding the API keys, it’s time to run Auto-GPT. Right-click on the “Auto-GPT” folder and choose “Copy as path“.</p>
+<li><p>After adding the API keys, run Auto-GPT by right-clicking on the “Auto-GPT” folder and choosing “Copy as path“.</p>
 </li>
-<li><p>Now, open the Terminal and type cd, add a space, and then paste the path you copied above. You can right-click on the Terminal to paste the path quickly. Next, press Enter, and you will move to the Auto-GPT folder. macOS and Linux users can simply right-click and open Terminal inside the folder itself.</p>
+<li><p>Open the Terminal and type cd, add a space, and then paste the path you copied above. You can right-click on the Terminal to paste the path quickly. Next, press Enter, and you will move to the Auto-GPT folder. macOS and Linux users can simply right-click and open Terminal inside the folder itself.</p>
 </li>
-<li><p>Once you are here, run the below command. It will automatically install all the required libraries to run Auto-GPT.</p>
+<li><p>Run the following command, and it will automatically install all the required libraries to run Auto-GPT.</p>
 <pre><code>pip <span class="hljs-keyword">install</span> -r requirements.txt
 </code></pre></li>
-<li><p>Next, run the below command, and it will start Auto-GPT on your system.</p>
+<li><p>Next, run the following command, and it will start Auto-GPT on your system.</p>
 <pre><code><span class="hljs-attribute">python -m autogpt</span>
 </code></pre></li>
 </ol>
-<h2 id="how-to-use-auto-gpt-on-your-pc">How to Use Auto-GPT on Your PC</h2>
-<p>Once you have installed Auto-GPT, it’s time to learn how to use it. Here are the steps to follow:</p>
+<h2 id="using-auto-gpt-on-your-pc">Using Auto-GPT on Your PC</h2>
+<p>Here are the steps to follow to use Auto-GPT:</p>
 <ol>
-<li><p><a href="https://docs.kanaries.net/tutorials/ChatGPT/autogpt">Auto-GPT</a> will prompt you to name the AI on the initial run. For instance, I’m developing a tool called Shopper-GPT that can locate things on Amazon. Leave this area empty and press Enter if you don’t want to build an AI for a specific use-case. By default, it loads the Entrepreneur-GPT name.</p>
+<li><p>On the initial run, Auto-GPT will prompt you to name the AI. Leave this area empty and press Enter if you don’t want to build an AI for a specific use-case. By default, it loads the Entrepreneur-GPT name.</p>
 </li>
 <li><p>The next step is to specify the function of the AI.</p>
 </li>
-<li><p>Next, establish a series of objectives for the autonomous AI. Here, you may tell the AI what you hope to accomplish. You can request that it store the data as a text or PDF file. After all the information has been obtained, you may also ask for it to shut down.</p>
+<li><p>Establish a series of objectives for the autonomous AI. Here, you may tell the AI what you hope to accomplish. You can request that it store the data as a text or PDF file. After all the information has been obtained, you may also ask for it to shut down.</p>
 </li>
-<li><p>Auto-GPT will now begin to think. You will be asked to approve actions as they are being taken. To confirm, type “y” and push Enter. It could connect to websites and collect data.</p>
+<li><p>Auto-GPT will now begin to think. Approve actions as they are being taken by typing “y” and pushing Enter. It could connect to websites and collect data.</p>
 </li>
-<li><p>You may read the AI’s thoughts, justifications, and plans. In order to generate the proper kind of information, it also offers criticism (kind of negative suggestions). It then completes the action.</p>
+<li><p>Read the AI’s thoughts, justifications, and plans. In order to generate the proper kind of information, it also offers criticism (kind of negative suggestions). It then completes the action.</p>
 </li>
 </ol>
 <h2 id="using-auto-gpt">Using Auto-GPT</h2>
-<p>Auto-GPT is an easy-to-use autonomous AI tool that can help you with various tasks. Here are a few examples:</p>
+<p>Auto-GPT has several uses including:</p>
 <h3 id="generating-text">Generating Text</h3>
-<p>Text creation is one of Auto-GPT’s main use cases. The tool may be used to create lengthy material, including product descriptions and even complete essays. Click the “Text” button in the Auto-GPT interface and enter a prompt to create text. If you wish to create an article about the advantages of yoga, for instance, put “Benefits of Yoga” into the search bar and select “Generate.”</p>
-<p>Then, depending on your prompt, Auto-GPT will produce an entire article with paragraphs and headings. The text’s length, temperature (which governs output unpredictability), and the number of times the AI should attempt to produce the text may all be modified.</p>
+<p>Text can be generated using Auto-GPT. The tool may be used to create lengthy material, including product descriptions and complete essays. Click the “Text” button in the Auto-GPT interface and enter a prompt to create text. If you wish to create an article about the advantages of yoga, for instance, put “Benefits of Yoga” into the search bar and select “Generate.”</p>
+<p>Depending on your prompt, Auto-GPT will produce an entire article with paragraphs and headings. The length of the text, temperature (which governs output unpredictability), and the number of times the AI should attempt to produce the text can all be modified.</p>
 <h3 id="summarizing-text">Summarizing Text</h3>
-<p>Auto-GPT can also be used to summarize text quickly. To do this, click on the “Summarize” button and paste the text you want to summarize. Auto-GPT will then generate a summary of the text, complete with keywords and the most important points.</p>
+<p>Auto-GPT can also be used to summarize texts quickly. To do this, click on the “Summarize” button and paste the text you want to summarize. Auto-GPT will generate a summary of the text, complete with keywords and the most important points.</p>
 <h3 id="completing-tasks">Completing Tasks</h3>
-<p>Using Auto-GPT, tasks may also be completed automatically. You may use the application, for instance, to plan your social media postings or automate your email answers. To accomplish this, select the job you wish to automate by clicking the “Task” button on the Auto-GPT interface. For instance, pick “Emails” and adhere to the on-screen instructions if you wish to automate your email answers.</p>
+<p>Auto-GPT can also complete tasks automatically. For instance, you may use the application to plan your social media postings or automate your email answers. To accomplish this, select the job you wish to automate by clicking the “Task” button on the Auto-GPT interface. For instance, pick “Emails” and adhere to the on-screen instructions if you wish to automate your email answers.</p>
 <ul>
 <li>Read more about <a href="https://docs.kanaries.net/articles/chatgpt-code-interpreter">ChatGPT Code Interpreter</a> here.</li>
 <li>What is <a href="https://docs.kanaries.net/articles/gpt4all">GPT4All</a>?</li>
